@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre Avis Compte !</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    button {
+      margin: 10px;
+      padding: 15px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .good {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .bad {
+      background-color: #f39c12;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Comment s'est passée votre expérience ?</h1>
+    <button class="good" onclick="redirectGood()">Tout était parfait !</button>
+    <button class="bad" onclick="redirectBad()">Il y a des points à améliorer</button>
+  </div>
+
+  <script>
+    function redirectGood() {
+      // Remplace le lien ci-dessous par le lien Google Avis de ton entreprise
+      window.location.href = "https://g.page/r/YOUR_GOOGLE_PLACE_ID/review";
+    }
+
+    function redirectBad() {
+      // Remplace le lien ci-dessous par ton questionnaire (ex : Google Forms, Typeform, etc.)
+      window.location.href = "https://forms.gle/YOUR_QUESTIONNAIRE_LINK";
+    }
+  </script>
+
+</body>
+</html>
